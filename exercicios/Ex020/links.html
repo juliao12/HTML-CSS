@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        /* SELETORES PERSONALIZADOS
+        #  = ID
+        .  = Class
+        :  = pseudo-class
+        :: = pseudo-element
+        >  = children (filho)
+        */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+        a {
+            color:red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:visited{
+            color:darkred;
+          
+        }
+        a:hover {
+            color:black;
+            text-decoration: underline;
+        }
+        a:active {
+            color:blue;
+        }
+
+        .especial {
+            background-color: rgb(224, 79, 79);
+        }
+        
+        .especial::before {
+            content:'=>';
+        }
+
+        .especial::after {
+            content:'<=';
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li><a href="https://github.com/juliao12" target='_blank' class='especial'>Repositório Github</a></li>
+        <li><a href="https://www.linkedin.com/in/j%C3%BAlio-c%C3%A9sar-976a17181/" target='_blank' class='especial'>Linkedin</a></li>
+        <li><a href="https://www.facebook.com/juliocesar.dias.509994" target='_blank'>Facebook</a></li>
+    </ul>
+</body>
+</html>
